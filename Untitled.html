@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #1b5e20; /* Deep green background */
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+        header h1 {
+            font-size: 3em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation Styles */
+        nav {
+            margin-top: 20px;
+        }
+
+        /* Main Content Container */
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Profile Section */
+        .bio {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 20px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .bio img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #1b5e20;
+            object-fit: cover;
+        }
+        .bio h2 {
+            font-size: 2.2em;
+            font-weight: 500;
+            color: #333;
+        }
+        .bio p {
+            font-size: 1.1em;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        /* Resume Section */
+        .resume-section {
+            margin-bottom: 40px;
+        }
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #1b5e20;
+            font-weight: 600;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .resume-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .resume-section li {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        .resume-section strong {
+            font-weight: 500;
+            color: #1b5e20;
+        }
+        .resume-section p {
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            margin-bottom: 40px;
+        }
+        .contact p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact a {
+            color: #1b5e20;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact a:hover {
+            color: #43a047;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1em;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .bio {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: center;
+            }
+            header h1 {
+                font-size: 2.5em;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <a href="#bio">Profile</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Profile Section -->
+        <section id="bio" class="bio">
+            <img src="your-photo.jpg" alt="Your Profile Picture">
+            <div>
+                <h2>Hello, I'm [Your Name]</h2>
+                <p>I’m a passionate <strong>[Your Profession]</strong>, specializing in <strong>[Your Skills/Technologies]</strong>. I love creating [describe your passion, e.g., innovative solutions, beautiful designs, etc.].</p>
+                <p>I’ve had the pleasure of working with companies like <strong>[Company Names]</strong>, and I specialize in helping clients [mention your impact, e.g., grow their businesses, optimize processes, etc.].</p>
+                <p>Feel free to connect with me on <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>.</p>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <h2>My Resume</h2>
+
+            <!-- Experience Section -->
+            <div class="resume-section">
+                <h3>Experience</h3>
+                <ul>
+                    <li><strong>Job Title</strong> - Company (Year - Year)</li>
+                    <li><strong>Job Title</strong> - Company (Year - Year)</li>
+                    <li><strong>Job Title</strong> - Company (Year - Year)</li>
+                </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Degree</strong> - University (Year - Year)</li>
+                    <li><strong>Degree</strong> - University (Year - Year)</li>
+                </ul>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="resume-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Skill 1</li>
+                    <li>Skill 2</li>
+                    <li>Skill 3</li>
+                    <li>Skill 4</li>
+                </ul>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="resume-section">
+                <h3>Projects</h3>
+                <ul>
+                    <li><strong>Project 1:</strong> Description of the project</li>
+                    <li><strong>Project 2:</strong> Description of the project</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to collaborate, feel free to reach out!</p>
+            <p>Email me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
